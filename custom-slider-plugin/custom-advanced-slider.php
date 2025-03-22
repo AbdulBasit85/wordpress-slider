@@ -3,7 +3,7 @@
 Plugin Name: Custom Advanced Slider
 Description: A professional WordPress slider plugin with drag-and-drop functionality and rich design options.
 Version: 1.0
-Author: Your Name
+Author: Abdul Basit
 */
 
 if (!defined('ABSPATH')) {

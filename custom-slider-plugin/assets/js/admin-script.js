@@ -5,9 +5,16 @@ jQuery(document).ready(function($) {
         var index = $('.slide-item').length;
         var newSlide = `
             <div class="slide-item" data-index="${index}">
-                <textarea name="slides[${index}][content]" placeholder="Slide Content"></textarea>
-                <input type="text" name="slides[${index}][image]" placeholder="Image URL">
-                <button class="remove-slide">Remove Slide</button>
+                <div class="slide-header">
+                    <span class="slide-title">Slide ${index + 1}</span>
+                    <button class="remove-slide">Remove Slide</button>
+                </div>
+                <div class="slide-content">
+                    <label for="slide-image-${index}">Image URL:</label>
+                    <input type="text" id="slide-image-${index}" name="slides[${index}][image]" placeholder="Enter image URL">
+                    <label for="slide-content-${index}">Content:</label>
+                    <textarea id="slide-content-${index}" name="slides[${index}][content]" placeholder="Enter slide content"></textarea>
+                </div>
             </div>
         `;
         $('.slides-container').append(newSlide);
@@ -25,7 +32,7 @@ jQuery(document).ready(function($) {
             // Update slide indexes
             $('.slide-item').each(function(index) {
                 $(this).attr('data-index', index);
-                $(this).find('textarea, input').each(function() {
+                $(this).find('input, textarea').each(function() {
                     var name = $(this).attr('name');
                     name = name.replace(/\[\d+\]/, '[' + index + ']');
                     $(this).attr('name', name);
