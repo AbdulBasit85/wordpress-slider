@@ -1,0 +1,52 @@
+/* Admin Styles for Slider Builder */
+#slider-builder {
+    margin: 20px 0;
+}
+
+.slides-container {
+    margin-bottom: 20px;
+}
+
+.slide-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.slide-item textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.slide-item input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.remove-slide {
+    background: #ff4444;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.remove-slide:hover {
+    background: #cc0000;
+}
+
+#add-slide {
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#add-slide:hover {
+    background: #005177;
+}

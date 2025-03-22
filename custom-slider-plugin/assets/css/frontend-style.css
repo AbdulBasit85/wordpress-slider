@@ -1,0 +1,32 @@
+/* Frontend Styles for Slider */
+.custom-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.custom-slider .slide {
+    display: none;
+    width: 100%;
+    position: relative;
+}
+
+.custom-slider .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.custom-slider .slide-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 15px;
+    max-width: 50%;
+}
+
+.custom-slider .slide.active {
+    display: block;
+}
